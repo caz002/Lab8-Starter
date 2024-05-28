@@ -125,7 +125,6 @@ async function getRecipes() {
           .then(response => {
             return response.json()});
         recipes.push(recipeData);
-        console.log(recipeData);
         saveRecipesToStorage(recipes);
         resolve(recipes);   
       }catch (error){
